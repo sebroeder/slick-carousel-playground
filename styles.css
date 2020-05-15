@@ -29,14 +29,14 @@ body {
 .card8 { background:#bdc3c7; }
 .card9 { background:#2ecc71; }
 
-.cards {
+.carousel {
   width: calc(5 * (144px + 24px));
   margin: 40px auto;
   padding-left: 12px;
   padding-right: 12px;
 }
 
-.cards .slick-slide {
+.carousel .slick-slide {
   width: 144px;
   height: 144px;
   margin: 12px;

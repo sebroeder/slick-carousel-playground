@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $('.cards').slick({
+  $('.carousel').slick({
     arrows: true,
     infinite: false,
     slidesToShow: 5,
