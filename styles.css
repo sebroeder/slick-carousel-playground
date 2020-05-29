@@ -8,7 +8,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 :root {
   --card-size: 144px;
   --card-spacing: 24px;
-  --max-cards: 5;
 }
 
 body {
@@ -39,7 +38,7 @@ body {
 .card9 { background:#2ecc71; }
 
 .carousel {
-  width: calc(var(--max-cards) * (var(--card-size) + var(--card-spacing)));
+  width: calc(var(--card-size) + var(--card-spacing));
   margin: 0 auto;
   padding: 0 calc(var(--card-spacing) * 0.5);
 }
@@ -48,4 +47,32 @@ body {
   width: var(--card-size);
   height: var(--card-size);
   margin: calc(var(--card-spacing) * 0.5);
+}
+
+/* width for 2 cards */
+@media only screen and (min-width: 392px) {
+  .carousel {
+    width: calc(2 * (var(--card-size) + var(--card-spacing)));
+  }
+}
+
+/* width for 3 cards */
+@media only screen and (min-width: 560px) {
+  .carousel {
+    width: calc(3 * (var(--card-size) + var(--card-spacing)));
+  }
+}
+
+/* width for 4 cards */
+@media only screen and (min-width: 728px) {
+  .carousel {
+    width: calc(4 * (var(--card-size) + var(--card-spacing)));
+  }
+}
+
+/* width for 5 cards */
+@media only screen and (min-width: 896px) {
+  .carousel {
+    width: calc(5 * (var(--card-size) + var(--card-spacing)));
+  }
 }
