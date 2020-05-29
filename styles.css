@@ -5,6 +5,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Box-sizing border-box */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root {
+  --card-size: 144px;
+  --card-spacing: 24px;
+  --max-cards: 5;
+}
 
 body {
   background-color: lightcyan;
@@ -18,7 +23,7 @@ body {
 
 .card {
   color: white;
-  font-size: 144px;
+  font-size: var(--card-size);
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
 }
@@ -34,14 +39,13 @@ body {
 .card9 { background:#2ecc71; }
 
 .carousel {
-  width: calc(5 * (144px + 24px));
+  width: calc(var(--max-cards) * (var(--card-size) + var(--card-spacing)));
   margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 0 calc(var(--card-spacing) * 0.5);
 }
 
 .carousel .slick-slide {
-  width: 144px;
-  height: 144px;
-  margin: 12px;
+  width: var(--card-size);
+  height: var(--card-size);
+  margin: calc(var(--card-spacing) * 0.5);
 }
