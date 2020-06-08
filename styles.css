@@ -38,7 +38,7 @@ body {
 .card9 { background:#2ecc71; }
 
 .carousel {
-  width: calc(var(--card-size) + var(--card-spacing));
+  min-width: calc(var(--card-size) + var(--card-spacing));
   margin: 0 auto;
   padding: 0 calc(var(--card-spacing) * 0.5);
 }

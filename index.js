@@ -1,9 +1,21 @@
 $(document).ready(() => {
   $('.carousel').slick({
-    arrows: true,
+    mobileFirst: true,
     infinite: false,
-    slidesToShow: 5,
     slidesToScroll: 1,
-    variableWidth: true
+    slidesToShow: 3,
+    arrows: false,
+    variableWidth: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 392,
+        settings: {
+          slidesToShow: 5,
+          arrows: true,
+          centerMode: false,
+        }
+      },
+    ]
   })
 })
